@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+      body{
+        background-color: rgb(233, 182, 238);
+        text-align: justify;
+        margin-top: 200px;
+        margin-left: 400px;
+
+      }
+      
+      .btn {
+    width: 160px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background: rgb(231, 80, 168);
+    color: rgb(63, 4, 4);
+    text-transform: uppercase;
+    transition: .4s;
+}
+.btn:hover {
+    transform: scale(1.2);
+}
+
+       
+      
+
+    </Style>
+</head>
+<body>
+    <!-- modify this form HTML and place wherever you want your form -->
+     <h1 style="color: red;">[Please Type Your Name, Mobile Number, Email(if any), Token Number, Adress and Then Press Order Button]</h1>
+     
+<form
+action="https://formspree.io/f/xkgnbnpy"
+method="POST"
+>
+<label>
+    Your Name:
+    <input type="name" style= "height: 25px; width: 400px; background-color: rgb(14, 229, 245); "  name="name" required>
+  </label> <p>
+<label>
+    <label>
+        Mobile No:
+        <input type="number" style="height: 25px; width: 400px;background-color: rgb(179, 219, 67);"  name="number" required>
+      </label> <p>
+    <label>
+  Your email:
+  <input type="email" style="height: 25px; width: 400px;background-color: rgba(90, 189, 151, 0.781);" name="email">
+</label> <p>
+<label>
+    Token No:
+    <input type="number" style="height: 25px; width: 400px;background-color: #dba9a9;" name="number">
+  </label> <p>
+   <p><Label>Distict:</Label>
+    <select style="background-color: rgb(219, 211, 94);" >
+    <option value="Dhaka">Dhaka</option>
+    <option value="Kushtia" selected>Kushtia</option>
+    <option value="Rajshahi">Rajshahi</option>
+     
+     </select>
+  </p>
+  
+  <!-- your other form fields go here -->
+  
+<label>
+  Your address: <br>
+  <textarea cols="50" rows="10" name="message" style="background-color: bisque;" ></textarea>
+</label><br>
+<!-- your other form fields go here -->
+ 
+ <button class="btn" id="orderButton" >  Order Now  </button>
+
+</form>
+</body>
+</html>
